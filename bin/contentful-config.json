@@ -1,0 +1,2406 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "about",
+        "type": "ContentType",
+        "createdAt": "2019-03-02T05:48:56.839Z",
+        "updatedAt": "2019-03-03T14:08:03.464Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2019-03-03T14:08:03.464Z",
+        "firstPublishedAt": "2019-03-02T05:49:01.230Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "About",
+      "description": "All information related to personal data.",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "roles",
+          "name": "Roles",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "socialLinks",
+          "name": "Social Links",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": ["socialLink"]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "profile",
+          "name": "Profile",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "aboutMe",
+          "name": "About Juka",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "faqs",
+          "name": "FAQS",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": ["project"]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "usefulLinks",
+          "name": "Useful Links",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": ["usefulLinks"]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "project",
+        "type": "ContentType",
+        "createdAt": "2019-03-02T05:48:56.842Z",
+        "updatedAt": "2019-03-02T05:49:00.273Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-03-02T05:49:00.272Z",
+        "firstPublishedAt": "2019-03-02T05:49:00.272Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Project",
+      "description": "Project description",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "publishedDate",
+          "name": "PublishedDate",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "repositoryUrl",
+          "name": "RepositoryUrl",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "projectUrl",
+          "name": "ProjectUrl",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "socialLink",
+        "type": "ContentType",
+        "createdAt": "2019-03-02T05:48:56.847Z",
+        "updatedAt": "2019-03-02T05:49:00.701Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-03-02T05:49:00.701Z",
+        "firstPublishedAt": "2019-03-02T05:49:00.701Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Social Link",
+      "description": "Social Link to display with a font awesome icon.",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "fontAwesomeIcon",
+          "name": "Font Awesome Icon",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "usefulLinks",
+        "type": "ContentType",
+        "createdAt": "2019-03-03T14:07:22.319Z",
+        "updatedAt": "2019-03-03T14:07:22.534Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-03-03T14:07:22.534Z",
+        "firstPublishedAt": "2019-03-03T14:07:22.534Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "UsefulLinks",
+      "description": "Useful Links",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "shortName",
+          "name": "Short Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "fampumfy77l7",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 12,
+        "createdAt": "2019-03-02T05:49:01.377Z",
+        "createdBy": {
+          "sys": {
+            "id": "45EdyMoHyKqIiCgsZdXRqH",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-03-03T14:08:04.129Z",
+        "updatedBy": {
+          "sys": {
+            "id": "45EdyMoHyKqIiCgsZdXRqH",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "about",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "roles",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "socialLinks",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "profile",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "aboutMe",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "faqs",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "projects",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "usefulLinks",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "fampumfy77l7",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-03-02T05:49:00.398Z",
+        "createdBy": {
+          "sys": {
+            "id": "45EdyMoHyKqIiCgsZdXRqH",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-03-02T05:49:01.845Z",
+        "updatedBy": {
+          "sys": {
+            "id": "45EdyMoHyKqIiCgsZdXRqH",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "project",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "publishedDate",
+          "widgetId": "datePicker"
+        },
+        {
+          "fieldId": "logo",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "repositoryUrl",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "projectUrl",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "type",
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "fampumfy77l7",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-03-02T05:49:00.837Z",
+        "createdBy": {
+          "sys": {
+            "id": "45EdyMoHyKqIiCgsZdXRqH",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-03-02T05:49:02.002Z",
+        "updatedBy": {
+          "sys": {
+            "id": "45EdyMoHyKqIiCgsZdXRqH",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "socialLink",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "fontAwesomeIcon",
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "fampumfy77l7",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-03-03T14:07:22.695Z",
+        "createdBy": {
+          "sys": {
+            "id": "45EdyMoHyKqIiCgsZdXRqH",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-03-03T14:07:23.077Z",
+        "updatedBy": {
+          "sys": {
+            "id": "45EdyMoHyKqIiCgsZdXRqH",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "usefulLinks",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "shortName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "4SrlLN9bt6Yew2UyGgM06a",
+        "type": "Entry",
+        "createdAt": "2019-03-02T05:49:09.745Z",
+        "updatedAt": "2019-03-02T06:15:46.324Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2019-03-02T06:15:46.324Z",
+        "firstPublishedAt": "2019-03-02T05:49:10.309Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Github"
+        },
+        "url": {
+          "en-US": "https://www.github.com/jukaLang/"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "github"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "5paxSRHbAkmgMc4WSW8S66",
+        "type": "Entry",
+        "createdAt": "2019-03-02T05:49:09.750Z",
+        "updatedAt": "2019-03-03T01:32:44.937Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 84,
+        "publishedAt": "2019-03-03T01:32:44.937Z",
+        "firstPublishedAt": "2019-03-02T05:49:13.047Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 85,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Juliar"
+        },
+        "publishedDate": {
+          "en-US": "2015-06-03T00:00-05:00"
+        },
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3XCO4uM5IowbAtOezYKknD"
+            }
+          }
+        },
+        "repositoryUrl": {
+          "en-US": "https://github.com/jukaLang/juliar"
+        },
+        "description": {
+          "en-US": "Original Programming Language that started the group."
+        },
+        "projectUrl": {
+          "en-US": "https://jukalang.com"
+        },
+        "type": {
+          "en-US": "Programming Language"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "6Y7EIx73nUCWuoIWcsuM00",
+        "type": "Entry",
+        "createdAt": "2019-03-02T05:49:09.778Z",
+        "updatedAt": "2019-03-02T06:46:48.707Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 69,
+        "publishedAt": "2019-03-02T06:46:48.707Z",
+        "firstPublishedAt": "2019-03-02T05:49:12.314Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 70,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "DReAM"
+        },
+        "publishedDate": {
+          "en-US": "2017-01-20T00:00+02:00"
+        },
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1532zIGinixI78kJCDJNpb"
+            }
+          }
+        },
+        "repositoryUrl": {
+          "en-US": "https://github.com/jukaLang/DReAM"
+        },
+        "description": {
+          "en-US": "The main programming language that we are developing."
+        },
+        "projectUrl": {
+          "en-US": "https://jukaLang.com"
+        },
+        "type": {
+          "en-US": "Programming Language"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "4J6WFTjoMUCmQKuKAaOsqE",
+        "type": "Entry",
+        "createdAt": "2019-03-02T05:49:10.044Z",
+        "updatedAt": "2019-03-02T06:15:31.032Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2019-03-02T06:15:31.032Z",
+        "firstPublishedAt": "2019-03-02T05:49:11.194Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Twitter"
+        },
+        "url": {
+          "en-US": "https://www.twitter.com/jukaLang"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "twitter"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "5lzMxuCX84uYqmgGmU8iKU",
+        "type": "Entry",
+        "createdAt": "2019-03-02T05:49:10.052Z",
+        "updatedAt": "2019-03-03T16:52:34.179Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 800,
+        "publishedAt": "2019-03-03T16:52:34.179Z",
+        "firstPublishedAt": "2019-03-02T05:49:10.655Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 15,
+        "version": 801,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "about"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Juka"
+        },
+        "description": {
+          "en-US": "Natural Prototyping Programming Language"
+        },
+        "roles": {
+          "en-US": [
+            "Free and Open Source",
+            "Great Looking Editor",
+            "Single Repository",
+            "Great Community",
+            "Powerful",
+            "Works with other languages"
+          ]
+        },
+        "socialLinks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5Fp8YWUIisyVgOlGPohvaR"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4J6WFTjoMUCmQKuKAaOsqE"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4Tnu8CDPgCHi3q6dVub7qa"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "487e0g40EZ3jglzBukxmpQ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4ZLsuGwgrQz4TAHbg8Qu4l"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4ua4Rnvdz8FjUU9GIaWfAs"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "30JhK7FSnO3VpxH3D02scQ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "25RJ3TXhL4WXskQNa5idco"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4SrlLN9bt6Yew2UyGgM06a"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6d1HAGM8lEIVFxdmptXkrh"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2AGmJvLoZHGw34qXgoHeRf"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4CBYYDLO6AyAA3yxma93RR"
+              }
+            }
+          ]
+        },
+        "profile": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1532zIGinixI78kJCDJNpb"
+            }
+          }
+        },
+        "aboutMe": {
+          "en-US": "Juka is an upcoming rapid prototyping programming language.\nIt's meant to be fast, efficient, and cross-platform.\n\n* __Builtin IDE:__ Juka has a simple built-in editor. Forget command prompts and terminals! Just focus on writing your sentences.\n* __Multithreaded:__ Don't worry about complicated stuff like multithreading and multiprocessing. Juka automatically creates a thread whenever it needs to!\n* __Single Repo:__ Create programs, share them with community! Help each other out. Juka is very community driven, so we are making sharing simple by introducing package manager.\n* __Crossplatform:__ Run on Windows, Macintosh, or any other platform. We are building Juka on top of .NET CORE platform. If you can install .NET Core Runtime, then you can run the language.\n* __Interface with other languages:__ We are building new ways to interact with Juka. Soon you will be able to import \"compiled\" code from other languages and use it in your program making it simple for non-coders to interact with your applications.\n* __Free and Open Source:__ You might have heard that there is no such thing as free lunch. Well, Juka is 100% free and is an open source product. Forever. We just ask that you participate in our community and tell your friends about it by tweeting, facebooking, emailing or whatever the means."
+        },
+        "faqs": {
+          "en-US": "__Q: Does Juka work on Linux? __\n\nA: *Juka is built on top of .NET Standard Library. This means that it can run on Windows, Linux, and Macintosh natively. We also support mobile platforms such as Android, iOS (iPhone and iPads), and Windows Phone. We also have plans to build programs for XBOX.*\n\n\n__Q: What is Juka good for?__\n\nA: *Juka is good for fast prototyping programs that run on almost any device.*\n\n\n__Q: Could this language help me in college?__\n\nA: *It could!*"
+        },
+        "projects": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6Y7EIx73nUCWuoIWcsuM00"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5paxSRHbAkmgMc4WSW8S66"
+              }
+            }
+          ]
+        },
+        "usefulLinks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4kZrGlfGzpey9PgkDw3Kqj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6SW0wClIN2iVqtziIWWcuk"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4T5HtyYitEQiKssr3rzEZE"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4ie3RGSTArx9yfRtjdMvO7"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "5Fp8YWUIisyVgOlGPohvaR",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:14:24.023Z",
+        "updatedAt": "2019-03-02T06:15:06.886Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2019-03-02T06:15:06.886Z",
+        "firstPublishedAt": "2019-03-02T06:15:06.886Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Facebook"
+        },
+        "url": {
+          "en-US": "https://www.facebook.com/jukalang/"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "facebook"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "4Tnu8CDPgCHi3q6dVub7qa",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:15:52.247Z",
+        "updatedAt": "2019-03-02T06:16:38.697Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2019-03-02T06:16:38.697Z",
+        "firstPublishedAt": "2019-03-02T06:16:24.862Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "VK"
+        },
+        "url": {
+          "en-US": "https://vk.com/juliarLang"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "vk"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "6d1HAGM8lEIVFxdmptXkrh",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:16:55.943Z",
+        "updatedAt": "2019-03-02T06:17:33.970Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2019-03-02T06:17:33.970Z",
+        "firstPublishedAt": "2019-03-02T06:17:33.970Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Reddit"
+        },
+        "url": {
+          "en-US": "https://reddit.com/r/juka"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "reddit"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "2AGmJvLoZHGw34qXgoHeRf",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:17:47.773Z",
+        "updatedAt": "2019-03-02T06:18:10.290Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2019-03-02T06:18:10.290Z",
+        "firstPublishedAt": "2019-03-02T06:18:10.290Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Tumblr"
+        },
+        "url": {
+          "en-US": "https://jukalang.tumblr.com/"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "tumblr"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "487e0g40EZ3jglzBukxmpQ",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:18:22.666Z",
+        "updatedAt": "2019-03-02T06:18:39.761Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2019-03-02T06:18:39.761Z",
+        "firstPublishedAt": "2019-03-02T06:18:39.761Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "YouTube"
+        },
+        "url": {
+          "en-US": "https://www.youtube.com/channel/UCRkKqD0fnuVAJLJe9p4ZiKQ"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "youtube"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "4ZLsuGwgrQz4TAHbg8Qu4l",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:18:53.456Z",
+        "updatedAt": "2019-03-03T00:07:14.282Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2019-03-03T00:07:14.282Z",
+        "firstPublishedAt": "2019-03-02T06:21:20.524Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Slack"
+        },
+        "url": {
+          "en-US": "https://jukalang.slack.com/"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "slack"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "25RJ3TXhL4WXskQNa5idco",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:22:02.880Z",
+        "updatedAt": "2019-03-02T06:22:25.590Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2019-03-02T06:22:25.590Z",
+        "firstPublishedAt": "2019-03-02T06:22:25.590Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Instagram"
+        },
+        "url": {
+          "en-US": "https://www.instagram.com/jukalanguage/"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "instagram"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "30JhK7FSnO3VpxH3D02scQ",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:22:29.738Z",
+        "updatedAt": "2019-03-02T06:22:54.489Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2019-03-02T06:22:54.489Z",
+        "firstPublishedAt": "2019-03-02T06:22:54.489Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Pinterest"
+        },
+        "url": {
+          "en-US": "https://www.pinterest.com/jukalanguage/"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "pinterest"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "4ua4Rnvdz8FjUU9GIaWfAs",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:23:16.207Z",
+        "updatedAt": "2019-03-02T06:32:31.844Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2019-03-02T06:32:31.844Z",
+        "firstPublishedAt": "2019-03-02T06:32:31.844Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Weibo"
+        },
+        "url": {
+          "en-US": "https://weibo.com/juliarLang"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "weibo"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "4CBYYDLO6AyAA3yxma93RR",
+        "type": "Entry",
+        "createdAt": "2019-03-02T06:27:52.516Z",
+        "updatedAt": "2019-03-02T06:29:43.359Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2019-03-02T06:29:43.359Z",
+        "firstPublishedAt": "2019-03-02T06:29:43.359Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "LinkedIn"
+        },
+        "url": {
+          "en-US": "https://linkedin.com/company/juka-programming-language"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "linkedin"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "4kZrGlfGzpey9PgkDw3Kqj",
+        "type": "Entry",
+        "createdAt": "2019-03-03T14:08:10.784Z",
+        "updatedAt": "2019-03-03T15:45:48.037Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 37,
+        "publishedAt": "2019-03-03T15:45:48.037Z",
+        "firstPublishedAt": "2019-03-03T14:09:10.034Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 38,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "usefulLinks"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Our Community"
+        },
+        "description": {
+          "en-US": "Join our ever growing Juka community. We use \"Slack\" for managing the community as it provides an easy way to stay connected. In order to join the community, you will need to be invited to our slack channel. You can receive an automatic invitation via email by filling out this form: [Slack Invitation Form](https://join.slack.com/t/jukalang/shared_invite/enQtNDgxMjA2Njc2ODAxLTE1NGE5MGVhYTlkNDg0Mzc3Zjc3ZDMxNTZiOWJiNTgyZmM3NjMyOGJmMTM4NmI5OGRhODJlOTQwOTFmZDY2Mzk)\nIf you already have an account, go to our slack channel located at: [https://jukalang.slack.com](https://jukalang.slack.com)"
+        },
+        "shortName": {
+          "en-US": "Slack"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "6SW0wClIN2iVqtziIWWcuk",
+        "type": "Entry",
+        "createdAt": "2019-03-03T16:04:17.127Z",
+        "updatedAt": "2019-03-03T16:07:38.978Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 28,
+        "publishedAt": "2019-03-03T16:07:38.978Z",
+        "firstPublishedAt": "2019-03-03T16:07:07.934Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 29,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "usefulLinks"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Contribute to the Source"
+        },
+        "description": {
+          "en-US": "Juka is built by the community, for the community. Please consider contributing to the Juka GitHub repository at [https://github.com/jukaLang](https://github.com/jukaLang)\nWhen you create new features, please follow the guidelines specified in the project documentation."
+        },
+        "shortName": {
+          "en-US": "Contribute"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "4T5HtyYitEQiKssr3rzEZE",
+        "type": "Entry",
+        "createdAt": "2019-03-03T16:08:13.462Z",
+        "updatedAt": "2019-03-03T16:09:20.855Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 44,
+        "publishedAt": "2019-03-03T16:09:20.855Z",
+        "firstPublishedAt": "2019-03-03T16:09:20.855Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 45,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "usefulLinks"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Tutorial Videos"
+        },
+        "description": {
+          "en-US": "Need help? Don't want to read boring tutorial? Watch tutorial videos through YouTube at [Juka YouTube Channel](https://www.youtube.com/channel/UCRkKqD0fnuVAJLJe9p4ZiKQ)"
+        },
+        "shortName": {
+          "en-US": "YouTube"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "4ie3RGSTArx9yfRtjdMvO7",
+        "type": "Entry",
+        "createdAt": "2019-03-03T16:09:32.518Z",
+        "updatedAt": "2019-03-03T16:10:08.510Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 33,
+        "publishedAt": "2019-03-03T16:10:08.510Z",
+        "firstPublishedAt": "2019-03-03T16:10:08.510Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 34,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "usefulLinks"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Contact Juka Team"
+        },
+        "description": {
+          "en-US": "Send us an email at [admin@jukalang.com](mailto:admin@jukalang.com)"
+        },
+        "shortName": {
+          "en-US": "Email"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "1532zIGinixI78kJCDJNpb",
+        "type": "Asset",
+        "createdAt": "2019-03-02T06:04:01.053Z",
+        "updatedAt": "2019-03-03T01:19:23.971Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2019-03-03T01:19:23.971Z",
+        "firstPublishedAt": "2019-03-02T06:04:13.674Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Juka"
+        },
+        "description": {
+          "en-US": "Juka Language Logo"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/fampumfy77l7/1532zIGinixI78kJCDJNpb/1f73c10809853658d3f4c886dfe6f282/11934574.png",
+            "details": {
+              "size": 9409,
+              "image": {
+                "width": 200,
+                "height": 200
+              }
+            },
+            "fileName": "11934574.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "id": "3XCO4uM5IowbAtOezYKknD",
+        "type": "Asset",
+        "createdAt": "2019-03-02T06:49:38.477Z",
+        "updatedAt": "2019-03-03T01:18:58.659Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 27,
+        "publishedAt": "2019-03-03T01:18:58.659Z",
+        "firstPublishedAt": "2019-03-02T06:50:00.307Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 28,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Juliar"
+        },
+        "description": {
+          "en-US": "Juliar Logo"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/fampumfy77l7/3XCO4uM5IowbAtOezYKknD/fbfcec54fa4a64bc98ef855fc822e3b6/juliarlogo.jpg",
+            "details": {
+              "size": 10466,
+              "image": {
+                "width": 266,
+                "height": 280
+              }
+            },
+            "fileName": "juliarlogo.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "4dpknAqDP2Y4gY1Vzm0EDO",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "fampumfy77l7"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "createdAt": "2019-03-02T05:47:08Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "45EdyMoHyKqIiCgsZdXRqH"
+          }
+        },
+        "updatedAt": "2019-03-02T05:47:08Z"
+      }
+    }
+  ],
+  "webhooks": [],
+  "roles": []
+}
