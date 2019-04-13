@@ -43,8 +43,8 @@ const ProfilePicture = styled(Image)`
 `;
 
 const Faqs = () => (
-  <Section.Container id="faqs" Background={Background}>
-    <Section.Header name="FAQs" icon="📜" label="faqs" />
+  <Section.Container id="FAQ" Background={Background}>
+    <Section.Header name="FAQ" icon="📜" label="faqs" />
     <StaticQuery
       query={graphql`
         query FAQsQuery {

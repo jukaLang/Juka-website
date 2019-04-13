@@ -22,6 +22,12 @@ body {
   font-family: Cabin;
   overflow-x: hidden;
 }
+
+@media screen and (max-width: 350px) {
+  #mainLogo {
+    width:20px;
+  }
+}
 `;
 
 config({ ssrFadeout: true });

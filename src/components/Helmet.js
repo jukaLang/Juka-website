@@ -3,6 +3,7 @@ import ReactHelmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
+import preview from '../preview.png';
 
 const Helmet = ({ theme = {} }) => (
   <StaticQuery
@@ -36,26 +37,68 @@ const Helmet = ({ theme = {} }) => (
         <ReactHelmet>
           <meta charSet="utf-8" />
           <title>{title}</title>
-          <meta name="description" content={description} />
+          <meta
+            name="description"
+            content="Juka - An upcoming Natural Rapid Prototyping language of the Future"
+          />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
           <link rel="shortcut icon" href={profile.favicon32.src} />
+          <link rel="icon" href={profile.favicon32.src} type="image/x-icon" />
           <meta name="theme-color" content={theme.background} />
-          <meta name="image" content={profile.favicon32.src} />
+          <meta name="image" content={preview} />
+          <meta name="robots" content="index,follow" />
 
-          <meta itemProp="name" content={title} />
-          <meta itemProp="description" content={description} />
-          <meta itemProp="image" content={profile.favicon32.src} />
+          <meta itemprop="name" content="Juka Programming Language" />
+          <meta
+            itemprop="description"
+            content="Juka - An upcoming Natural Rapid Prototyping language of the Future"
+          />
+          <meta itemprop="image" content={preview} />
 
-          <meta name="og:title" content={title} />
-          <meta name="og:description" content={description} />
-          <meta name="og:image" content={profile.bigIcon.src} />
-          <meta name="og:site_name" content={title} />
-          <meta name="og:locale" content="en_US" />
-          <meta name="og:type" content="website" />
+          <meta property="og:title" content="Juka Programming Language" />
+          <meta
+            property="og:description"
+            content="Juka - An upcoming Natural Rapid Prototyping language of the Future"
+          />
+          <meta property="og:image:alt" content="Juka Site Preview" />
+          <meta property="og:image" content={preview} />
+          <meta property="og:url" content="https://jukalang.com" />
+          <meta property="og:site_name" content="Juka" />
+          <meta property="og:locale" content="en_US" />
+          <meta
+            property="og:video"
+            content="https://www.youtube.com/watch?v=1bslLys11q0"
+          />
+          <meta property="fb:admins" content="1713218178907666" />
+          <meta property="fb:app_id" content="2286537544749608" />
+          <meta property="og:type" content="website" />
 
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:title" content={title} />
-          <meta name="twitter:description" content={description} />
-          <meta name="twitter:image" content={profile.bigIcon.src} />
+          <meta name="twitter:title" content="Juka Programming Language" />
+          <meta
+            name="twitter:description"
+            content="Juka - An upcoming Natural Rapid Prototyping language of the Future"
+          />
+          <meta name="twitter:site" content="@jukaLang" />
+          <meta name="twitter:creator" content="@jukaLang" />
+          <meta name="twitter:image" content={preview} />
+          <meta name="twitter:image:alt" content="Juka Site Preview" />
+          <meta
+            name="twitter:player"
+            content="https://www.youtube.com/watch?v=1bslLys11q0"
+          />
+
+          <meta
+            name="keywords"
+            content="Juka, DReAM, Upcoming, Natural, Rapid Prototyping, Language, Future Programming, Coding, Rapid, Prototyping, Android, iOS, Run on Any Platform, Fast"
+          />
+          <meta
+            name="news_keywords"
+            content="Create, Program, Programming Language, Rapid"
+          />
 
           <link
             rel="apple-touch-icon"

@@ -14,6 +14,18 @@ import styled from 'styled-components';
 import { Tooltip } from 'react-tippy';
 import LinkAnimated from '../components/LinkAnimated';
 import { CardContainer, Card } from '../components/Card';
+import {
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+  TwitterFollowButton,
+  TwitterHashtagButton,
+  TwitterMentionButton,
+  TwitterTweetEmbed,
+  TwitterMomentShare,
+  TwitterDMButton,
+  TwitterVideoEmbed,
+  TwitterOnAirButton,
+} from 'react-twitter-embed';
 
 const EllipsisHeading = styled(Heading)`
   overflow: hidden;
@@ -165,6 +177,12 @@ const LandingPage = () => (
               <CodeIntro />
               <Box m={3} />
               <ChangeLog />
+              <Box m={3} />
+              <TwitterTimelineEmbed
+                sourceType="profile"
+                screenName="jukalang"
+                options={{ height: 400 }}
+              />
             </Flex>
             <SectionLink section="about">
               {({ onClick }) => <MouseIcon onClick={onClick} />}

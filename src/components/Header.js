@@ -51,8 +51,9 @@ const Header = () => (
             const homeLink = home && (
               <Image
                 src={Logo}
-                width="50px"
+                width="50"
                 alt="Juka Logo"
+                id="mainLogo"
                 onClick={home.onClick}
                 style={{
                   cursor: 'pointer',
