@@ -8,6 +8,7 @@ import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
 import Triangle from '../components/Triangle';
 import CodeIntro from '../components/CodeIntro';
+import ChangeLog from '../components/ChangeLog';
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 import { Tooltip } from 'react-tippy';
@@ -148,32 +149,22 @@ const LandingPage = () => (
             </Flex>
             <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
               <Tooltip
-                title="Juka Slack"
+                title="Juka Microsoft Teams"
                 position="bottom"
                 trigger="mouseenter"
               >
                 <Text fontSize={24}>
-                  <LinkAnimated
-                    selected
-                    m={3}
-                    p={1}
-                    mt={3}
-                    fontSize={24}
-                    onClick={() =>
-                      window.open(
-                        'https://teams.microsoft.com/l/team/19%3ac21a3c093ed1474b9f8101ee5149a834%40thread.skype/conversations?groupId=3fc54a5a-8340-408c-b96a-114c84fefc1c&tenantId=08b2fe3a-abf3-4916-a485-3beefce7acb4',
-                        '_blank',
-                      )
-                    }
-                  >
+                  <a href="https://teams.microsoft.com/l/team/19%3ac21a3c093ed1474b9f8101ee5149a834%40thread.skype/conversations?groupId=3fc54a5a-8340-408c-b96a-114c84fefc1c&tenantId=08b2fe3a-abf3-4916-a485-3beefce7acb4">
                     Join our community on Microsoft Teams
-                  </LinkAnimated>
+                  </a>
                 </Text>
               </Tooltip>
             </Flex>
 
-            <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
+            <Flex justifyContent="center" flexWrap="wrap" px={2}>
               <CodeIntro />
+              <Box m={3} />
+              <ChangeLog />
             </Flex>
             <SectionLink section="about">
               {({ onClick }) => <MouseIcon onClick={onClick} />}
