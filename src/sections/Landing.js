@@ -160,17 +160,30 @@ const LandingPage = () => (
               ))}
             </Flex>
             <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
-              <Tooltip
-                title="Juka Microsoft Teams"
-                position="bottom"
-                trigger="mouseenter"
-              >
-                <Text fontSize={24}>
-                  <a href="https://teams.microsoft.com/l/team/19%3ac21a3c093ed1474b9f8101ee5149a834%40thread.skype/conversations?groupId=3fc54a5a-8340-408c-b96a-114c84fefc1c&tenantId=08b2fe3a-abf3-4916-a485-3beefce7acb4">
+              <Text fontSize={24} color="red">
+                <Tooltip
+                  title="Juka Microsoft Teams"
+                  position="bottom"
+                  trigger="mouseenter"
+                >
+                  <a
+                    target="_blank"
+                    href="https://teams.microsoft.com/l/team/19%3ac21a3c093ed1474b9f8101ee5149a834%40thread.skype/conversations?groupId=3fc54a5a-8340-408c-b96a-114c84fefc1c&tenantId=08b2fe3a-abf3-4916-a485-3beefce7acb4"
+                  >
                     Join our community on Microsoft Teams
                   </a>
-                </Text>
-              </Tooltip>
+                </Tooltip>
+                &nbsp;or&nbsp;
+                <Tooltip
+                  title="Juka Reddit"
+                  position="bottom"
+                  trigger="mouseenter"
+                >
+                  <a target="_blank" href="https://reddit.com/r/juka">
+                    Join our community on Reddit
+                  </a>
+                </Tooltip>
+              </Text>
             </Flex>
 
             <Flex justifyContent="center" flexWrap="wrap" px={2}>
